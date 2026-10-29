@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everlove ♡ Nuestro mundo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="pantalla-inicio" class="pantalla">
+        <div class="tarjeta">
+            <div class="luna">🌙</div>
+            <h1>Everlove ♡</h1>
+            <p>Un pequeño universo creado para nosotros.</p>
+
+            <input
+                type="text"
+                id="nombre"
+                placeholder="Nombre de mi persona favorita..."
+                maxlength="30"
+            >
+
+            <button id="btn-jugar">Entrar a nuestro mundo ✨</button>
+        </div>
+    </div>
+
+    <main id="juego" hidden>
+        <header class="barra-superior">
+            <div>
+                <strong>EVERLOVE ♡</strong>
+                <p id="saludo">Nuestro pequeño mundo</p>
+            </div>
+            <button id="btn-carta" aria-label="Abrir carta romántica">
+                💌
+            </button>
+        </header>
+
+        <section class="mision">
+            <span>✦ MISIÓN DEL CORAZÓN</span>
+            <h2>Construyamos nuestro hogar</h2>
+            <p>Explora, recoge flores y crea un lugar especial.</p>
+        </section>
+
+        <canvas id="mundo" aria-label="Mundo de juego"></canvas>
+
+        <nav class="inventario" aria-label="Inventario">
+            <button class="bloque seleccionado" data-bloque="flor">🌷<small>Flor</small></button>
+            <button class="bloque" data-bloque="corazon">💗<small>Corazón</small></button>
+            <button class="bloque" data-bloque="cristal">💎<small>Cristal</small></button>
+            <button class="bloque" data-bloque="linterna">🏮<small>Luz</small></button>
+            <button id="btn-regalo">🎁 Sorpresa</button>
+        </nav>
+
+        <div id="mensaje" role="status"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
